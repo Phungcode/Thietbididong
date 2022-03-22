@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#0588F1"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#F4F4F4"
+        android:gravity="center"
+        android:background="#FF5722"
+        android:text="SỐ HỌC ĐƠN GIẢN"
+        android:layout_marginBottom="20dp"
+        tools:ignore="HardcodedText" />
+    <TextView
+        android:id="@+id/tvA"
+        android:layout_width="65dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_below="@id/textView1"
+        android:background="#FAF7F7"
+        android:gravity="center"
+        android:paddingStart="10dp"
+        android:text="A ="
+        android:textColor="#000000"
+        android:textSize="16sp"
+        tools:ignore="HardcodedText" />
+    <EditText
+        android:id="@+id/edtA"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@id/tvA"
+        android:layout_alignTop="@id/tvA"
+        android:textColor="#000000"
+        android:background="#FAF7F7"
+        android:imeOptions="actionSearch"/>
+    <TextView
+        android:id="@+id/tvB"
+        android:layout_width="65dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/tvA"
+        android:background="#FAF7F7"
+        android:gravity="center"
+        android:paddingStart="10dp"
+        android:text="B ="
+        android:textColor="#000000"
+        android:textSize="16sp" />
+    <EditText
+        android:id="@+id/edtB"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@id/tvB"
+        android:layout_alignTop="@id/tvB"
+        android:textColor="#000000"
+        android:background="#FAF7F7"
+        android:imeOptions="actionSearch"/>
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:onClick="Xuly_Cong"
+        android:layout_below="@id/tvB"
+        android:text="+"
+        android:textColor="#ffff"
+        android:layout_marginStart="25dp"/>
+    <Button
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textColor="#ffff"
+        android:id="@+id/btnSub"
+        android:onClick="Xuly_Tru"
+        android:layout_toEndOf="@+id/btnAdd"
+        android:layout_alignTop="@+id/btnAdd"
+        android:layout_marginStart="5dp"/>
+    <Button
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:text="*"
+        android:textColor="#ffff"
+        android:id="@+id/btnMul"
+        android:onClick="Xuly_Nhan"
+        android:layout_toEndOf="@+id/btnSub"
+        android:layout_alignTop="@+id/btnAdd"
+        android:layout_marginStart="5dp"/>
+    <Button
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:text="/"
+        android:textColor="#ffff"
+        android:id="@+id/btnDiv"
+        android:onClick="Xuly_Chia"
+        android:layout_toEndOf="@+id/btnMul"
+        android:layout_alignTop="@+id/btnAdd"
+        android:layout_marginStart="5dp"/>
+    <TextView
+        android:id="@+id/tvResurt"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_below="@id/btnAdd"
+        android:background="#FAF7F7"
+        android:gravity="center"
+        android:text="KẾT QUẢ"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/edtResurt"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/tvResurt"
+        android:background="#FAF7F7"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="#000000"/>
+
+</RelativeLayout>
