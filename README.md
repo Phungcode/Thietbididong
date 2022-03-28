@@ -1,3 +1,2 @@
 # Thietbididong
-Phùng Sỹ Hoàng Sơn 
-MSSV: 61136475
+Sinh Viên: Phùng Sỹ Hoàng Sơn --- MSSV: 61136475
