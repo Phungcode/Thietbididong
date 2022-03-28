@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">61136475_Bai16</string>
+    <string-array name="options">
+        <item>Tý</item>
+        <item>Tèo</item>
+        <item>Bin</item>
+        <item>Bo</item>
+    </string-array>
+</resources>
