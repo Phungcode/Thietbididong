@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        DataBase = SQLiteDatabase.openOrCreateDatabase("/data/data/cntt61.h61133717/MyBook.db", null);
+        DataBase = SQLiteDatabase.openOrCreateDatabase("/data/data/cntt.ntu.pshs_bai2/MyBook.db", null);
         TaoVaThemDuLieu();
         NapSACHvaoListview();
     }
